@@ -846,36 +846,67 @@
 
 .register-brand {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  gap: 14px;
+  gap: 18px;
+}
+
+.register-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  flex: 1;
+  padding-top: 4px;
 }
 
 .register-logo {
   display: block;
-  max-width: 100%;
+  width: auto;
   height: auto;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
+/* tamanhos ajustados para ficarem visualmente equilibradas */
 .orgplam-logo {
-  width: 120px;
+  width: 70px;
 }
 
 .cnhi-logo {
-  width: 120px;
+  width: 95px;
+  margin-top: 2px;
 }
 
 .unisoft-register-logo {
-  width: 120px;
+  width: 90px;
+  margin-top: 2px;
 }
 
-.register-item h3 {
+.register-content h3 {
   margin: 0;
   font-size: 1.05rem;
+  line-height: 1.2;
 }
 
-.register-item p {
+.register-content p {
   margin: 0;
-  line-height: 1.7;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .register-brand {
+    gap: 14px;
+  }
+
+  .orgplam-logo {
+    width: 58px;
+  }
+
+  .cnhi-logo {
+    width: 82px;
+  }
+
+  .unisoft-register-logo {
+    width: 78px;
+  }
 }
